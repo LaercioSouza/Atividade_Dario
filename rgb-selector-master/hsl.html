@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>RGB Selector</title>
+  </head>
+  <body>
+    <div class="fullContent">
+      <div class="boxContent">
+         <div>
+          <a href = "index.html"> <button>RGB</button></a>
+          <a href="cmyk.html"><button>CMYK</button> </a>
+          <button>HSV</button>
+        </div>
+        <h1>
+          _seletor de cores <span id="rName">h</span><span id="gName">s</span
+          ><span id="bName">l</span>
+        </h1>
+
+
+        <div class="divContent">
+          <span class="labelContent" id="redLabel">h</span>
+          <input
+            class="rangeContent"
+            id="redRange"
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            value="0"
+          />
+          <span class="colorContent" id="redValue">0</span>
+        </div>
+        <div class="divContent">
+          <span class="labelContent" id="greenLabel">s</span>
+          <input
+            class="rangeContent"
+            id="greenRange"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="0"
+          />
+          <span class="colorContent" id="greenValue">0</span>
+        </div>
+        <div class="divContent">
+          <span class="labelContent" id="blueLabel">l</span>
+          <input
+            class="rangeContent"
+            id="blueRange"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="0"
+          />
+          <span class="colorContent" id="blueValue">0</span>
+        </div>
+        <div class="divContent">
+          <span class="labelContent" id="blueLabel"></span>
+          <div id="colorBox"></div>
+          <span class="colorContent" id="blueValue"></span>
+        </div>
+        
+      </div>
+      <div class="socialTitles">
+        
+      </div>
+    </div>
+
+    <script src="./js/hsl.js"></script>
+  </body>
+</html>
